@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sentiment Analysis Application</title>
+        <link rel="stylesheet" href="{% static 'css/all.css' %}">
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'css/customStyles.css' %}">
+        <!-- Add Font Awesome CSS link here -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about-section">About</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1 class="app-title">Pashto Text Sentiment Analysis</h1>
+        <p class="app-description">Analyze sentiment related to Politics, Sports, and Dramas of Pashto.</p>
+    </div>
+
+    <main>
+        <form action="" method="POST" class="analysis-form">
+            {% csrf_token %}
+            <textarea name="opinion" id="opinion" class="input-text" placeholder="Paste your opinion here" rows="4" required></textarea>
+            <br><br>
+            <button type="submit" class="submit-button">Analyze</button>
+        </form>
+
+        {% if result %}
+        <div class="result">
+            <h2 class="result-heading">Analysis Result:</h2>
+            <p class="result-text">{{ result }}</p>
+        </div>
+        {% endif %}
+    </main>
+
+    <div class="container" id="about-section">
+        <h2>About</h2>
+        <p>
+            People express their opinions on social media in the English language as well as their native languages.
+            So we performed a Sentiment Analysis of the native language 'Pashto'. The Pashto language is the national
+            language of Afghanistan, and it is spoken in many regions of Pakistan. We used online social networks generated
+            corpus translated into English and annotated it into positive and negative sentiments by two different native
+            and well-aware Pashto speakers.
+            Here we performed Sentiment Analysis (SA) on Pashto Text using Machine Learning Models including Support Vector
+            Machine (SVM), Naive Bayes (NB), Decision Tree (DT), Random Forest (RF), and AdaBoost with an n-gram model
+            of feature extraction technique.
+        </p>
+    </div>
+
+    <footer>
+        <div class="footer-content" id="contact-section">
+            <h2 class="contact-heading">Contact Information</h2>
+            <ul class="contact-icons">
+
+                <div class="header-icons">
+                    <a href="https://linkedin.com/in/farhadmohmand66" target="_blank" class="icon-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/farhadMohmand66" target="_blank" class="icon-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://github.com/farhadmohmand66" target="_blank" class="icon-link"><i class="fab fa-github"></i></a>
+                    <a href="mailto:farhadmohmand22@gmail.com" target="_blank" class="icon-link"><i class="far fa-envelope" ></i></a>
+                    <a href="https://wa.me/03469869529" target="_blank" class="icon-link"><i class="fas fa-phone" ></i></a>
+            
+                </div>
+                <li><i class="fas fa-map-marker-alt"></i>Islamabad, Pakistan</li>
+            </ul>
+        </div>
+        <div class="container">
+            <p>&copy; SA Application. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
