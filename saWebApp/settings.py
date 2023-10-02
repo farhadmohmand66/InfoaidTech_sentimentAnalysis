@@ -1,9 +1,10 @@
 from pathlib import Path
 import os
-
+import MySQLdb
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 STATIC_DIR = os.path.join(BASE_DIR, 'staticfiles')
+DB_DIR = os.path.join(BASE_DIR, 'db.db.sqlite3')
 
 SECRET_KEY = 'django-insecure-*^loipg4b_70^rt#&sg6&y)p$z&plo++849yje_v*t##9#_9c#'
 
@@ -61,7 +62,7 @@ WSGI_APPLICATION = 'saWebApp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'NAME': DB_DIR,
     }
 }
 
