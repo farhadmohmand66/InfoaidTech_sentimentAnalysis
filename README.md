@@ -7,10 +7,10 @@ Project Live on : [https://farhadmohmand66.pythonanywhere.com](https://farhadmoh
 
 
 ## About Corpus
-The corpus of the Pashto language is generated from Facebook. The CSV file was created and stored every sentence according to the following fields: (i) ID (iii) Source (link) from where the comments were collected and topic of comments (iii) Pashto Text, this is the main text for SA (iv) English translation, (v) Annotator One and (vi) Annotator Two, these both annotators were a native speaker of Pashto language and well familiar of Pashto Text. The corpus belongs to three genres Politics, Sports, Dramas, and Movies combined. The corpus contains 300 rows of Politics, 150 rows of Sports, 150 rows of dramas and movies, and seven attributes. The link to the Dataset is given below:
+The corpus of the Pashto language is generated from Facebook. The CSV file was created and stored every sentence according to the following fields: (i) ID (iii) Source (link) from where the comments were collected and topic of comments (iii) Pashto Text, this is the main text for SA (iv) English translation, (v) Annotator One and (vi) Annotator Two, these both annotators were a native speaker of Pashto language and well familiar of Pashto Text. The corpus belongs to three genres Politics, Sports, Dramas, and Movies combined. The corpus contains 300 rows of Politics, 150 rows of Sports, 150 rows of dramas and movies, and seven attributes. The link to the corpus is given below:
 
 
-Corpos Link: [https://www.kaggle.com/farhadkhan66/datasets](https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus)   
+Corpus Link: [https://www.kaggle.com/farhadkhan66/datasets](https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus)   
 
 
 
