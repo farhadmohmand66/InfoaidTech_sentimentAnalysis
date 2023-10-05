@@ -3,7 +3,7 @@ import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-STATIC_DIR = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_DIR = os.path.join(BASE_DIR, '/saApp/static')
 DB_DIR = os.path.join(BASE_DIR, 'db.sqlite3')
 
 SECRET_KEY = 'django-insecure-*^loipg4b_70^rt#&sg6&y)p$z&plo++849yje_v*t##9#_9c#'
@@ -104,11 +104,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 # STATICFILES_DIRS = (
-# os.path.join(BASE_DIR, 'saApp/static/'))
+# os.path.join(BASE_DIR, '/saApp/static/'))
 
 # STATIC_URL = '/static/'
 
-STATIC_URL = 'static/'
+STATIC_URL = 'STAIC_DIR/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
