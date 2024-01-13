@@ -12,6 +12,8 @@ The corpus of the Pashto language is generated from Facebook. The CSV file was c
 
 Corpus Link: [https://www.kaggle.com/farhadkhan66/datasets](https://www.kaggle.com/datasets/farhadkhan66/pashto-translated-corpus)   
 
+User view: ![image](https://github.com/farhadmohmand66/sentimentAnalysisUnisgML/assets/110168481/ab912c6b-5b77-41d0-91dc-2ebba130ef31)
+
 
 
 ## 🔗 Contact:
